@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<navigation-bar title="Weixin" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="container">
+    <view class="header">
+      <text class="title">AI智能助手</text>
+      <text class="subtitle">让智能为生活添彩</text>
+      <image class="header-img" src="/images/ai-banner.png" mode="aspectFit"></image>
+    </view>
+    
+    <view class="content">
+      <view class="feature-list">
+        <view class="feature-item">
+          <image class="feature-icon" src="/images/chat.png"></image>
+          <text class="feature-text">智能对话</text>
+        </view>
+        <view class="feature-item">
+          <image class="feature-icon" src="/images/translate.png"></image>
+          <text class="feature-text">多语言翻译</text>
+        </view>
+        <view class="feature-item">
+          <image class="feature-icon" src="/images/write.png"></image>
+          <text class="feature-text">智能创作</text>
+        </view>
+      </view>
+      
+      <view class="btn-container">
+        <button class="ai-btn" bindtap="goToAIChat">开始AI问答</button>
+        <text class="tip">点击开始智能对话</text>
+      </view>
+    </view>
+  </view>
+</scroll-view>

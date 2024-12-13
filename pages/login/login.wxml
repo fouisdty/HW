@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="header">
+    <image class="logo" src="/images/ai-logo.png" mode="aspectFit"></image>
+    <text class="title">AI智能助手</text>
+    <text class="subtitle">让智能为生活添彩</text>
+  </view>
+  
+  <view class="form">
+    <view class="input-group">
+      <image class="icon" src="/images/user.png"></image>
+      <input class="input" type="text" placeholder="请输入账号" model:value="{{username}}" />
+    </view>
+    
+    <view class="input-group">
+      <image class="icon" src="/images/lock.png"></image>
+      <input class="input" type="password" placeholder="请输入密码" model:value="{{password}}" />
+    </view>
+    
+    <button class="btn-login" bindtap="login">登录</button>
+  </view>
+</view> 

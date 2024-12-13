@@ -1,0 +1,51 @@
+<view class="chat-container">
+  <view class="chat-header">
+    <view class="header-left">
+      <text class="back-btn" bindtap="handleBack">←</text>
+    </view>
+    <view class="header-center">
+      <text class="header-title">AI智能助手</text>
+      <text class="header-subtitle">24小时在线为您服务</text>
+    </view>
+  </view>
+  
+  <scroll-view class="chat-content" scroll-y scroll-into-view="{{scrollToView}}" enhanced="true" bounces="true">
+    <view class="welcome-card">
+      <image class="robot-avatar" src="/images/robot.png" mode="aspectFit"></image>
+      <text class="welcome-title">智能AI助理</text>
+      <text class="welcome-text">您好！我可以为您提供以下服务：</text>
+      <view class="feature-tags">
+        <text class="tag">智能问答</text>
+        <text class="tag">语言翻译</text>
+        <text class="tag">文案创作</text>
+        <text class="tag">代码编写</text>
+        <text class="tag">知识解答</text>
+        <text class="tag">数学计算</text>
+      </view>
+    </view>
+    
+    <view class="message-list">
+      <block wx:for="{{messages}}" wx:key="index">
+        <view class="message {{item.type === 'user' ? 'message-user' : 'message-ai'}}">
+          <image class="avatar" src="{{item.type === 'user' ? '/images/user-avatar.png' : '/images/robot.png'}}" mode="aspectFill"></image>
+          <view class="message-box">
+            <text class="message-time">{{item.time || '刚刚'}}</text>
+            <text class="message-content">{{item.content}}</text>
+          </view>
+        </view>
+      </block>
+    </view>
+  </scroll-view>
+  
+  <view class="input-area">
+    <input class="chat-input" 
+           placeholder="请输入您想问的问题" 
+           placeholder-class="input-placeholder"
+           value="{{inputValue}}" 
+           bindinput="onInput"
+           bindconfirm="sendMessage"
+           confirm-type="send"
+           cursor-spacing="20"/>
+    <button class="send-btn" hover-class="btn-hover" bindtap="sendMessage">发送</button>
+  </view>
+</view> 

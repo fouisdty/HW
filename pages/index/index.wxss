@@ -1,0 +1,100 @@
+/**index.wxss**/
+page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #f0f5ff 0%, #ffffff 100%);
+}
+
+.scrollarea {
+  flex: 1;
+  overflow-y: hidden;
+}
+
+.container {
+  min-height: 100vh;
+  padding: 60rpx 40rpx;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 80rpx;
+}
+
+.title {
+  display: block;
+  font-size: 68rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30rpx;
+}
+
+.subtitle {
+  display: block;
+  font-size: 36rpx;
+  color: #666;
+  margin-bottom: 50rpx;
+}
+
+.header-img {
+  width: 500rpx;
+  height: 380rpx;
+}
+
+.content {
+  background: #ffffff;
+  border-radius: 40rpx;
+  padding: 50rpx 40rpx;
+  box-shadow: 0 8rpx 30rpx rgba(0, 0, 0, 0.08);
+}
+
+.feature-list {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 80rpx;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+.feature-icon {
+  width: 120rpx;
+  height: 120rpx;
+  margin-bottom: 25rpx;
+}
+
+.feature-text {
+  display: block;
+  font-size: 32rpx;
+  color: #666;
+}
+
+.btn-container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.ai-btn {
+  width: 100%;
+  height: 180rpx;
+  line-height: 180rpx;
+  background: #1989fa;
+  color: #ffffff;
+  font-size: 56rpx;
+  border-radius: 90rpx;
+  box-shadow: 0 8rpx 20rpx rgba(25, 137, 250, 0.3);
+  text-align: center;
+}
+
+.ai-btn:active {
+  opacity: 0.8;
+}
+
+.tip {
+  display: block;
+  text-align: center;
+  font-size: 32rpx;
+  color: #999;
+  margin-top: 40rpx;
+}

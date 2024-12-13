@@ -1,0 +1,81 @@
+.container {
+  padding: 30rpx;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f0f5ff 0%, #ffffff 100%);
+}
+
+.header {
+  margin: 100rpx 0 80rpx;
+  text-align: center;
+}
+
+.logo {
+  width: 180rpx;
+  height: 180rpx;
+  margin-bottom: 30rpx;
+}
+
+.title {
+  display: block;
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20rpx;
+}
+
+.subtitle {
+  font-size: 32rpx;
+  color: #666;
+}
+
+.form {
+  background: #ffffff;
+  border-radius: 20rpx;
+  padding: 40rpx;
+  box-shadow: 0 4rpx 20rpx rgba(0, 0, 0, 0.05);
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #eee;
+  padding: 20rpx 0;
+  margin-bottom: 30rpx;
+}
+
+.icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+
+.input {
+  flex: 1;
+  font-size: 32rpx;
+}
+
+.btn-login {
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  margin-top: 50rpx;
+  background: #1989fa;
+  color: #fff;
+  font-size: 34rpx;
+  border-radius: 45rpx;
+  box-shadow: 0 4rpx 12rpx rgba(25, 137, 250, 0.3);
+}
+
+.btn-login:active {
+  opacity: 0.9;
+}
+
+.tips {
+  margin-top: 30rpx;
+  text-align: center;
+}
+
+.tip-text {
+  font-size: 26rpx;
+  color: #999;
+} 
